@@ -1,0 +1,5 @@
+.offer{
+  padding: 12px; border-radius: 12px;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border);
+}

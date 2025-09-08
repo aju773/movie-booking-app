@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import HeroCarousel from './components/HeroCarousel/HeroCarousel'
 import NowPlaying from './Pages/NowPlaying/NowPlaying'
 import Upcoming from './Pages/Upcoming/Upcoming'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/upcoming" element={<Upcoming />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   )
 }
