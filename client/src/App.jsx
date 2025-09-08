@@ -1,7 +1,9 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
-import Navbar from './components/Navbar/Navbar'
+import HeroCarousel from './components/HeroCarousel/HeroCarousel'
+import NowPlaying from './Pages/NowPlaying/NowPlaying'
+import Upcoming from './Pages/Upcoming/Upcoming'
 import './App.css'
 
 export default function App() {
@@ -11,6 +13,8 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/now-playing" element={<NowPlaying />} />
+          <Route path="/upcoming" element={<Upcoming />} />
         </Routes>
       </main>
     </div>
@@ -22,6 +26,17 @@ function Home() {
   return (
     <>
       <HeroCarousel />
+      <div className="container section">
+        <section>
+          <h2 className="h2">Now Playing</h2>
+          <NowPlaying compact />
+        </section>
+
+        <section>
+          <h2 className="h2">Upcoming</h2>
+          <Upcoming compact />
+        </section>
+      </div>
     </>
   )
 }
