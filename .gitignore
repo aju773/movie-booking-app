@@ -1,0 +1,96 @@
+# ==========================
+# OS files
+# ==========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================
+# Python / Django
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env
+.venv/
+ENV/
+env/
+
+# Packaging / build
+*.egg-info/
+dist/
+build/
+
+# Coverage / testing
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.mypy_cache/
+
+# SQLite DBs (if any local used)
+db.sqlite3
+*.sqlite3
+
+# Local logs & media
+*.log
+media/
+staticfiles/
+
+# Keep migrations (they define schema) – DO NOT ignore server/*/migrations/
+
+# ==========================
+# Node / Vite (client/)
+# ==========================
+client/node_modules/
+client/dist/
+client/build/
+client/.turbo/
+
+# Vite cache
+*.local
+*.vite
+
+# Environment files
+client/.env
+client/.env.local
+client/.env.*.local
+
+# Lockfiles – usually commit package-lock.json / yarn.lock for reproducibility
+# Uncomment to ignore if you prefer
+# client/package-lock.json
+# client/yarn.lock
+
+# ==========================
+# IDEs / Editors
+# ==========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Swap & temp
+*.swp
+*~
+.session
+
+# ==========================
+# Docker (if used)
+# ==========================
+docker-compose.override.yml
+.env.docker
+
+# ==========================
+# Security / sensitive
+# ==========================
+*.pem
+*.key
+*.crt
+*.sql
+*.dump
+*.tgz
+*.gz
