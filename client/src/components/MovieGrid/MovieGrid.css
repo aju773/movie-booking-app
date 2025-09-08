@@ -1,0 +1,19 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 1200px;
+}
+.card-movie{
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  transition: transform .08s ease;
+}
+.card-movie:hover{ transform: translateY(-2px); }
+.card-movie .meta{ padding: 10px; }
+.card-movie .title{ font-weight: 700; font-size: .98rem; }
+.card-movie .sub{ font-size: .9rem; color: var(--muted); }
