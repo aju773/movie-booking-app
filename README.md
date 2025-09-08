@@ -1,0 +1,6 @@
+- Movie Booking App project building Like Bookmyshow
+- React FrontEnd
+- Django Backend
+- Mysql database for user Authflow and booking flow
+- fetch movies from TMDB free api
+- only user and booking in django backend do
