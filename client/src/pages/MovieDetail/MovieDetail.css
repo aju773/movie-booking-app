@@ -1,0 +1,7 @@
+.detail{
+  display:grid; grid-template-columns: 240px 1fr; gap: 16px;
+}
+@media (max-width: 900px){ .detail{ grid-template-columns: 1fr; } }
+.detail .poster{ border-radius: 12px; overflow:hidden; border:1px solid var(--border); background: var(--card); }
+.detail .meta{ display:grid; gap: 8px; }
+
