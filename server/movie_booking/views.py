@@ -23,7 +23,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         extra_kwargs = {"username": {"required": False}}
 
     def validate_email(self, value):
-        if User.objects.filter(email_iexact=value).exists();
+        if User.objects.filter(email_iexact=value).exists():
             raise serializers.ValidattionError("A user with that email already exists.")
         return value
     
