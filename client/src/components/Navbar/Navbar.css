@@ -1,0 +1,96 @@
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: saturate(120%) blur(6px);
+  background: color-mix(in oklab, var(--bg-elev-1) 70%, transparent);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar .wrap{
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand{ font-weight: 800; letter-spacing: 1px; }
+
+.search{
+  flex: 1;
+  max-width: 520px;
+  display: flex;
+  gap: 8px;
+}
+
+.search input{
+  flex: 1;
+  border-radius: 999px; /* fully rounded */
+}
+
+.search button{
+  border-radius: 999px; /* fully rounded */
+}
+
+.nav-links{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-link{
+  padding: 8px 10px;
+  border-radius: 999px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav-link.active{
+  font-weight: 700;
+  color: var(--accent); /* dark/highlight color */
+  background: transparent; /* no background shading */
+}
+
+.theme-toggle{
+  position: relative;
+  width: 48px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev-2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  transition: background 0.2s;
+}
+
+.theme-toggle .toggle-circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffd700;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.theme-toggle .toggle-circle.dark{
+  transform: translateX(24px);
+  background: #333;
+}
+
+.user-badge{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border:1px solid var(--border);
+}
+.user-badge .btn{
+  border-radius: 999px;
+}
+.admin-link{
+  color: red;
+  font-weight: 700;
+}
