@@ -27,7 +27,7 @@ class Booking(models.Model):
 
     # Status / lifecycle
     status = models.CharField(max_length=16, choices=Status.choices, default=Status.CONFIRMED)
-    Cancelled_at = models.DateTimeField(null=True, blank=True)
+    cancelled_at = models.DateTimeField(null=True, blank=True)
 
     booking_code = models.CharField(max_length=12, unique=True, editable=False)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -39,3 +39,4 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.movie_title} - {self.user} - {self.status}"
+

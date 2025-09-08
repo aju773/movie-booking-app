@@ -11,6 +11,6 @@ class BookingSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = ["id", "user", "status", "cancelled_at", "booking_code", "created_at"]
 
-    def create(self, validate_data):
-        validate_data["user"] = self.context["request"].user
-        return super().create(validate_data)
+    def create(self, validated_data):
+        validated_data["user"] = self.context["request"].user
+        return super().create(validated_data)

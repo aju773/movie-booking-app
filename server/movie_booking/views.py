@@ -10,6 +10,7 @@ from rest_framework.views import APIView
 from .models import Booking
 from .serializers import BookingSerializer
 
+
 # -----------------------
 # Register endpoint
 # -----------------------
@@ -23,13 +24,13 @@ class RegisterSerializer(serializers.ModelSerializer):
         extra_kwargs = {"username": {"required": False}}
 
     def validate_email(self, value):
-        if User.objects.filter(email_iexact=value).exists():
-            raise serializers.ValidattionError("A user with that email already exists.")
+        if User.objects.filter(email__iexact=value).exists():
+            raise serializers.ValidationError("A user with that email already exists.")
         return value
-    
-    def create(self, validate_data):
-        email = validate_data.get("email")
-        password = validate_data.get("password")
+
+    def create(self, validated_data):
+        email = validated_data.get("email")
+        password = validated_data.get("password")
         username = validated_data.get("username") or email
         name = validated_data.get("name", "")
 
