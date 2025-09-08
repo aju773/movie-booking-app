@@ -5,6 +5,7 @@ import HeroCarousel from './components/HeroCarousel/HeroCarousel'
 import NowPlaying from './Pages/NowPlaying/NowPlaying'
 import Upcoming from './Pages/Upcoming/Upcoming'
 import Footer from './components/Footer/Footer'
+import Auth from './Pages/Auth/Auth'
 import './App.css'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/now-playing" element={<NowPlaying />} />
           <Route path="/upcoming" element={<Upcoming />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </main>
       <Footer />
