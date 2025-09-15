@@ -34,7 +34,6 @@ This project was created after learning Django, React, and MySQL.
 
 ## 📸 Screenshots
 
-> Add actual images from your project. Example:
 >
 > ![Homepage](./asset/home.png)  
 > ![Homepage](./asset/signup.png)  
