@@ -4,7 +4,7 @@ from .settings import *
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'your-app-name.onrender.com',  # Replace with your Render URL
+    'https://movie-booking-backend-7u8q.onrender.com',  # Replace with your Render URL
     'localhost',
     '127.0.0.1',
 ]
@@ -31,7 +31,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # CORS
 CORS_ALLOWED_ORIGINS = [
-    "https://your-frontend-app.netlify.app",  # Replace with your Netlify URL
+    "https://mythix.netlify.app/",  # Replace with your Netlify URL
     "http://localhost:3000",
     "http://localhost:5173",
 ]
