@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'server.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myProject',
-        'USER': 'el',
-        'PASSWORD': 'el',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'SebCgxZxoVRenASqGVuZQYvcvqTFVCBZ',
+        'HOST': 'crossover.proxy.rlwy.net',
+        'PORT': '51871',
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
